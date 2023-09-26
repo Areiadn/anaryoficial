@@ -1,0 +1,170 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+}
+
+.slider-box{
+    width: 100vh;
+    height: 90vh;
+    margin: 100px 100px;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    animation: slide 20s infinite alternate linear;
+    width: 340%;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.text1{
+    position: absolute;
+    text-align: center;
+    padding:0 70px;
+    top: 130px;
+    color:#0C504C;
+}
+
+.text2{
+    position: absolute;
+    text-align: center;
+    padding:0 70px;
+    top: 130px;
+    color:#F5FFFE;
+}
+
+.h2{
+    font-size: 40%;
+    margin-bottom: 35px;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
+
+@media screen and (max-width: 620px){
+    .titleAnary{
+        margin-top:13%;
+        font-size: 22px;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hero-text{
+        top: 70%;
+        transform: translateX(70%) translateY(95%);
+        margin-left: 15%;
+        gap: 2rem;
+    
+    }
+
+    .redesSociales{
+        top: 55%;
+        left: 50%; 
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .social-icon ul{
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%,120%);
+        display: flex;
+    }
+
+
+
+    .dona{
+        background: #0C504C;
+        padding: 12px 60px;
+        margin-right: 9px;
+        transform: translateX(-3%) translateY(0%);
+    }
+    
+    .volu{
+        background: #C57979;
+        padding: 15px 50px;
+        margin-left: 70px;
+        justify-content: center;
+        transform: translateX(-10%) translateY(0%);
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .backdona{
+        background-image: url(/Applications/librosdona.png);
+    }
+
+    .donaAnary{
+        transform: translateY(80%)
+    }
+
+   
+}
+
+@media screen and (max-width: 900px){
+    .her{
+        transform: translateY(6%);
+    }
+}
+
+@media screen and (max-width: 580px){
+    .volu{
+        transform: translateX(-6%) translateY(0%);
+    }
+}
+
+@media screen and (max-width: 560px){
+    .titleAnary{
+        margin-top:13%;
+        font-size: 20px;
+        margin-left: 15%;
+    }
+
+    .hero-text{
+        top: 70%;
+        transform: translateX(70%) translateY(95%);
+        margin-left: 5%;
+        gap: 2rem;
+    
+    }
+
+    .anaryp{
+        margin-left: -20%;
+    }
+
+    .dona{
+        transform: translateX(-6%) translateY(0%);
+    }
+
+    .volu{
+        transform: translateX(-6%) translateY(0%);
+    }
+}
+
